@@ -11,6 +11,7 @@
 		789CA9A82A06F17E00BC942C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789CA9A72A06F17E00BC942C /* ContentView.swift */; };
 		789CA9AA2A06F17F00BC942C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 789CA9A92A06F17F00BC942C /* Assets.xcassets */; };
 		789CA9AD2A06F17F00BC942C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 789CA9AC2A06F17F00BC942C /* Preview Assets.xcassets */; };
+		789CA9B52A2080DB00BC942C /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789CA9B42A2080DB00BC942C /* PrimaryButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		789CA9A72A06F17E00BC942C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		789CA9A92A06F17F00BC942C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		789CA9AC2A06F17F00BC942C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		789CA9B42A2080DB00BC942C /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				789CA9A52A06F17E00BC942C /* TriviaGameApp.swift */,
 				789CA9A72A06F17E00BC942C /* ContentView.swift */,
+				789CA9B32A2080B800BC942C /* Components */,
 				789CA9A92A06F17F00BC942C /* Assets.xcassets */,
 				789CA9AB2A06F17F00BC942C /* Preview Content */,
 			);
@@ -65,6 +68,14 @@
 				789CA9AC2A06F17F00BC942C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		789CA9B32A2080B800BC942C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				789CA9B42A2080DB00BC942C /* PrimaryButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				789CA9B52A2080DB00BC942C /* PrimaryButton.swift in Sources */,
 				789CA9A82A06F17E00BC942C /* ContentView.swift in Sources */,
 				789CA9A62A06F17E00BC942C /* TriviaGameApp.swift in Sources */,
 			);
