@@ -29,8 +29,13 @@ struct QuestionView: View {
                     .bold()
                     .foregroundColor(.gray)
                 
-                
+                AnswerRow(answer: Answer(text: "false", isCorrect: true))
+                AnswerRow(answer: Answer(text: "true", isCorrect: false))
             }
+            
+            PrimaryButton(text: "Next")
+            
+            Spacer()
             
         }
         .padding()
