@@ -13,7 +13,7 @@ class TriviaManager: ObservableObject {
     @Published private(set) var length = 0
     @Published private(set) var index = 0
     @Published private(set) var reachedEnd = false
-    @Published private(set) var answerSelected = FALSE
+    @Published private(set) var answerSelected = false
     @Published private(set) var question: AttributedString = ""
     @Published private(set) var answerChoices: [Answer] = []
     @Published private(set) var progress: CGFloat = 0.00
@@ -39,15 +39,16 @@ class TriviaManager: ObservableObject {
             decoder.keyDecodingStrategy = .convertFromSnakeCase
             let decodedData = try decoder.decode(Trivia.self, from: data)
             
-            DispatchedQueue.main.async {
+            DispatchQueue.main.async {
                 self.trivia = decodedData.results
                 self.length = self.trivia.count
                 self.setQuestion()
             }
-                
+            
         } catch {
             print("Error fetching trivia: \(error)")
         }
+    }
         
     func goToNextQuestion() {
         if index + 1 < length {
@@ -64,7 +65,7 @@ class TriviaManager: ObservableObject {
         
         if index < length {
             let currentTriviaQuestion = trivia[index]
-        question = currentTriviaQuestion.formattedQuestion
+            question = currentTriviaQuestion.formattedQuestion
             answerChoices = currentTriviaQuestion.answers
         }
     }
